@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "LeetCode Result Sound",
+  "version": "1.0",
+  "description": "Plays sound based on submission result and difficulty",
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["sounds/*.mp3"],
+      "matches": ["https://leetcode.com/*"]
+    }
+  ]
+}
